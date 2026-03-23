@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEXSOFT - Soluções para Operações</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="imagens/index1-scaled-300x82.png" alt="INDEXSOFT">
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#solucoes" data-i18n="nav_modalidades">Modalidades</a></li>
+                <li><a href="#sportsbook" data-i18n="nav_sportsbook">Sportsbook</a></li>
+                <li><a href="#cassino" data-i18n="nav_cassino">Cassino</a></li>
+                <li><a href="#tecnologia" data-i18n="nav_ecossistema">Ecossistema</a></li>
+                <li><a href="#regulamentacao" data-i18n="nav_regulamentacao">Regulamentação</a></li>
+            </ul>
+            <div class="nav-actions" style="display: flex; align-items: center; gap: 16px;">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="pt">PT</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="es">ES</button>
+                </div>
+                <a href="#" class="btn-primary-nav" data-i18n="nav_cta">Solicitar Acesso</a>
+                <button class="hamburger-btn" id="mobile-menu-btn" aria-label="Menu" style="display: none; background: none; border: none; color: white; font-size: 24px; cursor: pointer;">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: MAIN HERO -->
+    <section class="hero-main" style="padding-top: 0;">
+        <div class="container two-col align-center" style="padding-top: 10px;">
+            <div class="col-left left-align hero-text-col">
+                <span class="tag-outline" data-i18n="hero_tag">ECOSSISTEMA IGAMING ALL-IN-ONE</span>
+                <h1 class="main-title-large"><span data-i18n="hero_title">Performance que se transforma em</span> <span class="highlight-pink-italic" data-i18n="hero_title_hl">resultado.</span></h1>
+                <p class="description" style="max-width: 500px" data-i18n="hero_desc">Tecnologia validada, operação segura e suporte dedicado, tudo o que sua operação iGaming precisa para vencer no mercado brasileiro.</p>
+                <a href="#" class="btn-primary" style="margin-top: 24px; display: inline-flex; align-items: center; gap: 8px;"><span data-i18n="hero_cta">Agendar Demonstração</span> <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="col-right hero-images-col">
+                <div class="floating-mockups">
+                    <img src="imagens/Macbook (2).png" alt="Macbook" class="float-macbook">
+                    <img src="imagens/Mockup telefone.png" alt="Telefone" class="float-phone">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1.5: ANIMATED SQUARES (FINANCE & MANAGEMENT) -->
+    <section class="animated-cards-section">
+        <div class="container grid-3-col">
+            <!-- Card 1: PIX -->
+            <div class="feature-square card-pix">
+                <h3 class="ft-title text-center" style="margin-top: 24px;" data-i18n="pix_title">Depósitos e saques via<br>PIX</h3>
+                <div class="pix-transactions">
+                    <div class="pix-item faded-1" id="pix-item-1">
+                        <div class="pix-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M5.5 12h13a1 1 0 0 0 0-2h-13a1 1 0 0 0 0 2zM5.5 16h13a1 1 0 0 0 0-2h-13a1 1 0 0 0 0 2zM5.5 8h13a1 1 0 0 0 0-2h-13a1 1 0 0 0 0 2z"/></svg></div>
+                        <div class="pix-info">
+                            <strong data-i18n="pix_t1">Você sacou R$ 1.627,12</strong>
+                            <span data-i18n="pix_d1">12M AGO</span>
+                        </div>
+                    </div>
+                    <div class="pix-item faded-2" id="pix-item-2">
+                        <div class="pix-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M5.5 12h13a1 1 0 0 0 0-2h-13a1 1 0 0 0 0 2zM5.5 16h13a1 1 0 0 0 0-2h-13a1 1 0 0 0 0 2zM5.5 8h13a1 1 0 0 0 0-2h-13a1 1 0 0 0 0 2z"/></svg></div>
+                        <div class="pix-info">
+                            <strong data-i18n="pix_t2">Você recebeu R$ 384,50</strong>
+                            <span data-i18n="pix_d2">3M AGO</span>
+                        </div>
+                    </div>
+                    <div class="pix-item active-pix animate-slide-up" id="pix-item-3">
+                        <div class="pix-icon primary" id="pix-icon-main"><svg viewBox="0 0 24 24" fill="#0ad17e" width="20" height="20"><path d="M5.5 12h13a1 1 0 0 0 0-2h-13a1 1 0 0 0 0 2zM5.5 16h13a1 1 0 0 0 0-2h-13a1 1 0 0 0 0 2zM5.5 8h13a1 1 0 0 0 0-2h-13a1 1 0 0 0 0 2z"/></svg></div>
+                        <div class="pix-info">
+                            <strong data-i18n="pix_t3" id="pix-text-main">Você recebeu R$ 1.120,00</strong>
+                            <span class="badge-novo"><span class="dot-pink-small"></span> <span data-i18n="pix_badge">NOVO</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2: Suporte -->
+            <div class="feature-square card-support">
+                <div class="live-feed-badge"><span class="dot-green-small blink" style="background:#0ad17e"></span> <span data-i18n="sup_badge">ONLINE 24/7</span></div>
+                <h3 class="ft-title left" style="margin-top: 24px;" data-i18n="sup_title">Suporte Dedicado</h3>
+                <p class="ft-sub left" data-i18n="sup_desc">Atendimento humanizado e especializado.</p>
+                <div class="support-anim-box">
+                    <div class="chat-b left">Olá, como posso ajudar?</div>
+                    <div class="chat-b right delay-1">Preciso de ajuda com a integração.</div>
+                    <div class="chat-b left delay-2" style="background: var(--primary-pink); color: white;">Claro, vou te auxiliar agora mesmo!</div>
+                </div>
+            </div>
+            <!-- Card 3: Sistema de Afiliados -->
+            <div class="feature-square card-affiliates-small">
+                <h3 class="ft-title left" style="margin-top: 24px;" data-i18n="affil_title_small">Sistema de Afiliados</h3>
+                <p class="ft-sub left" data-i18n="affil_desc_small">Expanda e gerencie suas parcerias.</p>
+                <div class="affiliate-network">
+                    <div class="net-node center"><i class="fa-solid fa-users"></i></div>
+                    
+                    <div class="net-node branch n1"><i class="fa-solid fa-user-plus"></i><span class="com highlight-pink">+R$ 50</span></div>
+                    <div class="net-node branch n2"><i class="fa-solid fa-user-plus"></i><span class="com highlight-pink">+R$ 150</span></div>
+                    <div class="net-node branch n3"><i class="fa-solid fa-user-plus"></i><span class="com highlight-pink">+R$ 300</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: MODALIDADES -->
+    <section class="hero-section" id="solucoes">
+        <div class="container text-center">
+            <h1 class="main-title" data-i18n="mod_title">Soluções para diferentes operações</h1>
+            <p class="subtitle" style="max-width: 650px; margin-inline: auto;" data-i18n="mod_desc">Escolha a modalidade ideal para o seu projeto e visualize como cada solução pode ser apresentada na plataforma.</p>
+            
+            <div class="pills-container" id="pills-container">
+                <button class="pill active" data-index="0" data-i18n="pill_0">BINGO</button>
+                <button class="pill" data-index="1" data-i18n="pill_1">TRADICIONAL</button>
+                <button class="pill" data-index="2" data-i18n="pill_2">2P500</button>
+                <button class="pill" data-index="3" data-i18n="pill_3">SUPER 6</button>
+                <button class="pill" data-index="4" data-i18n="pill_4">SUPER FÁCIL</button>
+            </div>
+
+            <div class="showcase-box">
+                <button class="nav-arrow left" id="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                
+                <div class="showcase-content">
+                    <div class="showcase-left">
+                        <div class="app-mockup" id="app-mockup">
+                            <div class="app-header">
+                                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                                <div class="bar"></div>
+                                <div class="bar-short"></div>
+                            </div>
+                            <div class="app-screen" id="mockup-screen">
+                                <!-- JS vai criar os elementos aqui -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-right">
+                        <span class="tag-dynamic" id="mod-tag" data-i18n="mod_tag_lbl">MODALIDADE</span>
+                        <h2 id="mod-title" class="mod-title-dynamic">BINGO</h2>
+                        <p id="mod-desc">Uma experiência dinâmica e envolvente...</p>
+                    </div>
+                </div>
+
+                <button class="nav-arrow right" id="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3.5: SPORTSBOOK B2B -->
+    <section class="sportsbook-section" id="sportsbook">
+        <div class="container sportsbook-combined" style="display: flex; flex-direction: column; gap: 48px;">
+            <div class="two-col align-center" style="gap: 32px; width: 100%;">
+                <div class="col-left left-align sportsbook-content" style="position: relative; z-index: 10;">
+                    <h2 class="title-large" style="margin-bottom: 24px;" data-i18n="sb_title">
+                        <span class="highlight-pink">Sportsbook completo</span> para escalar sua operação
+                    </h2>
+                    <p class="description" style="margin-bottom: 32px;" data-i18n="sb_desc">
+                        Integre apostas esportivas ao seu sistema com alta performance, estabilidade e cobertura global. Uma solução B2B robusta para ampliar seu portfólio.
+                    </p>
+                    <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                        <a href="#" class="btn-primary" data-i18n="sb_btn_primary">Solicitar integração</a>
+                    </div>
+                </div>
+                
+                <div class="col-right sportsbook-visual" style="position: relative;">
+                    <div class="sb-glow"></div>
+                    <!-- Jogadora Image -->
+                    <img src="imagens/jogadora (1).png" alt="Jogadora de Futebol" class="sb-player-img">
+                </div>
+            </div>
+
+            <div class="sb-benefits-grid" style="margin-top: 0; width: 100%;">
+                <div class="sb-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h4 data-i18n="sb_b1_title">Integração via API simples</h4>
+                </div>
+                <div class="sb-card">
+                    <i class="fa-solid fa-server"></i>
+                    <h4 data-i18n="sb_b2_title">Alta estabilidade e uptime</h4>
+                </div>
+                <div class="sb-card">
+                    <i class="fa-solid fa-globe"></i>
+                    <h4 data-i18n="sb_b3_title">Cobertura global de esportes</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: SEGURANÇA -->
+    <section class="security-section">
+        <div class="container two-col">
+            <div class="col-left left-align">
+                <h2 class="title-large">
+                    <span data-i18n="sec_1">Segurança.</span><br>
+                    <span data-i18n="sec_2">Escalabilidade.</span><br>
+                    <span class="highlight-green" id="dynamic-color-text" data-i18n="sec_3">Personalização.</span>
+                </h2>
+                <p class="description" data-i18n="sec_desc">
+                    Acreditamos que cada operador é único, e por isso desenvolvemos sistemas sob medida, prontos para atender às exigências jurídicas e técnicas de cada jurisdição.
+                </p>
+            </div>
+            <div class="col-right mockup-col" style="position: relative;">
+                <div class="mockup-compose">
+                    <img src="imagens/Verde.png" alt="Sistema Webt" class="desktop-mockup" id="dynamic-desktop-img" onerror="this.src='imagens/tela sistema.png'">
+                    <!-- Removed mobile mockup upon request -->
+                </div>
+                
+                <div style="display: flex; flex-direction: column; align-items: center; margin-top: 32px;">
+                    <div class="color-picker" id="color-picker" style="margin-top: 0;">
+                        <button class="color-dot green active" data-color="#10b981" data-image="imagens/Verde.png"></button>
+                        <button class="color-dot blue" data-color="#3b82f6" data-image="imagens/Azul.png"></button>
+                        <button class="color-dot red" data-color="#ef4444" data-image="imagens/Vermelho.png"></button>
+                        <button class="color-dot pink" data-color="#ff2e9f" data-image="imagens/Rosa.png"></button>
+                        <button class="color-dot orange" data-color="#f97316" data-image="imagens/Laranja.png"></button>
+                    </div>
+                    <span class="experimente-text animate-pulse-soft"><i class="fa-solid fa-arrow-up"></i> <span data-i18n="experimente">Experimente!</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2.5: CASINO IGAMING -->
+    <section class="casino-section" id="cassino">
+        <div class="container two-col align-center">
+            
+            <div class="col-left left-align casino-content" style="position: relative;">
+                <div class="casino-badge"><span class="dot-pink-small"></span> <span data-i18n="cas_badge">SOLUÇÃO IGAMING COMPLETA</span></div>
+                <h2 class="title-large" style="font-size: clamp(32px, 5vw, 48px); line-height: 1.1; margin-bottom: 24px; position: relative; z-index: 2;">
+                    <span data-i18n="cas_title">Potencialize sua operação de cassino com</span> <span class="highlight-pink" data-i18n="cas_title_hl">tecnologia de nível global.</span>
+                </h2>
+                <p class="description" style="max-width: 500px; margin-bottom: 32px; position: relative; z-index: 2;" data-i18n="cas_desc">
+                    Uma plataforma robusta com infraestrutura de alta performance, integração com os maiores provedores do mercado e recursos avançados para escalar receita com segurança.
+                </p>
+
+                <div class="casino-logos-carousel">
+                    <div class="casino-logos-track">
+                        <img src="imagens/provedoras/LOGO-CASAS1.png" alt="Provedora">
+                        <img src="imagens/provedoras/LOGO-CASAS2 (1).png" alt="Provedora">
+                        <img src="imagens/provedoras/LOGO-CASAS3.png" alt="Provedora">
+                        <img src="imagens/provedoras/LOGO-CASAS4.png" alt="Provedora">
+                        <img src="imagens/provedoras/LOGO-CASAS5.png" alt="Provedora">
+                        <img src="imagens/provedoras/LOGO-CASAS6 (1).png" alt="Provedora">
+                        <!-- Duplicate for infinite seamless scroll -->
+                        <img src="imagens/provedoras/LOGO-CASAS1.png" alt="Provedora">
+                        <img src="imagens/provedoras/LOGO-CASAS2 (1).png" alt="Provedora">
+                        <img src="imagens/provedoras/LOGO-CASAS3.png" alt="Provedora">
+                        <img src="imagens/provedoras/LOGO-CASAS4.png" alt="Provedora">
+                        <img src="imagens/provedoras/LOGO-CASAS5.png" alt="Provedora">
+                        <img src="imagens/provedoras/LOGO-CASAS6 (1).png" alt="Provedora">
+                    </div>
+                </div>
+
+                <div class="casino-metrics">
+                    <div class="casino-metric-box">
+                        <strong class="highlight-pink"><span class="animate-counter" data-prefix="+" data-suffix="" data-target="3000">0</span></strong>
+                        <span data-i18n="metric_1_title">JOGOS E SLOTS</span>
+                        <p data-i18n="metric_1_desc">Os títulos mais rentáveis dos maiores provedores globais.</p>
+                    </div>
+                    <div class="casino-metric-box">
+                        <strong class="highlight-pink"><span class="animate-counter" data-prefix="" data-suffix="%" data-target="99.9">0.0</span></strong>
+                        <span data-i18n="metric_2_title">UPTIME GARANTIDO</span>
+                        <p data-i18n="metric_2_desc">Estabilidade absoluta para sua operação nunca parar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-right casino-visual" style="position: relative; display: flex; justify-content: flex-end;">
+                <!-- Airplane floating -->
+                <img src="imagens/aviao.png" alt="Avião Flyer" class="floating-plane">
+
+                <div class="slot-machine-container push-right" id="casino-trigger">
+                    <div class="casino-glow"></div>
+                    
+                    <div class="gemini-images">
+                        <img src="imagens/pinata.png" class="gem-img gem-3" alt="Mascot">
+                    </div>
+
+                    <!-- CSS Slot Machine -->
+                    <div class="slot-machine">
+                        <div class="slot-body">
+                            <div class="slot-header"><span data-i18n="slot_lbl">CASSINO</span> <span class="highlight-pink">INDEX</span></div>
+                            <div class="slot-screen">
+                                <div class="reel"><div class="reel-strip" id="strip-1"></div></div>
+                                <div class="reel"><div class="reel-strip" id="strip-2"></div></div>
+                                <div class="reel"><div class="reel-strip" id="strip-3"></div></div>
+                            </div>
+                            <div class="slot-footer">
+                                <div class="slot-button glow-pink-border" id="slot-play-btn" data-i18n="slot_btn">JACKPOT</div>
+                            </div>
+                        </div>
+
+                        <!-- CSS Lever -->
+                        <div class="css-lever" id="slot-lever" title="Puxar Alavanca">
+                            <div class="lever-base"></div>
+                            <div class="lever-stick">
+                                <div class="lever-ball"></div>
+                                <div class="lever-shaft"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gemini-images-front">
+                        <img src="imagens/coelho.png" class="gem-img gem-2" alt="Mascot">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: TECNOLOGIA BENTO GRID -->
+    <section class="tech-section" id="tecnologia">
+        <div class="container">
+            <h2 class="section-title text-center"><span data-i18n="tech_title">Tecnologia pensada para</span> <span class="highlight-pink" data-i18n="tech_title_hl">sua operação</span></h2>
+            
+            <div class="bento-grid">
+                <!-- Card 1 -->
+                <div class="bento-item card-people glow-pink-border">
+                    <div class="bento-content-top">
+                        <h3 data-i18n="card_1_title">Pessoas reais, resultados reais.</h3>
+                        <p data-i18n="card_1_desc">Por trás da tecnologia INDEX existe um ecossistema humano. Um time que combina técnica, criatividade e compromisso com o sucesso de cada cliente.</p>
+                    </div>
+                    <div class="bento-center-space">
+                        <div class="people-icon-wrapper">
+                            <div class="glow-circle"></div>
+                            <div class="icon-headset">
+                                <i class="fa-solid fa-headset"></i>
+                                <div class="sub-icon"><i class="fa-solid fa-laptop"></i></div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-primary" data-i18n="card_1_btn">COMEÇAR AGORA</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bento-item card-panel">
+                    <div class="bento-text">
+                        <h4 data-i18n="card_2_title">Painel completo.</h4>
+                        <p data-i18n="card_2_desc">Controle total da operação com relatórios, APIs e automações.</p>
+                    </div>
+                    <div class="panel-graphic">
+                        <div class="graph-ui">
+                            <div class="g-header">
+                                <div class="g-dots"><i class="fa-solid fa-shapes"></i></div>
+                                <div class="g-line"></div>
+                            </div>
+                            <div class="g-body">
+                                <div class="g-side">
+                                    <div class="g-link active"></div>
+                                    <div class="g-link"></div>
+                                </div>
+                                <div class="g-chart">
+                                    <div class="bar" style="height: 40%"></div>
+                                    <div class="bar" style="height: 60%"></div>
+                                    <div class="bar" style="height: 30%"></div>
+                                    <div class="bar" style="height: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bento-item card-mobile">
+                    <div class="bento-text">
+                        <h4 data-i18n="card_3_title">Aplicativo mobile exclusivo</h4>
+                        <span class="android-tag">ANDROID</span>
+                    </div>
+                    <div class="mobile-icon-wrapper">
+                        <div class="mobile-outline">
+                            <div class="m-dot"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bento-item card-affiliates">
+                    <div class="bento-text">
+                        <h4 data-i18n="card_4_title">Programa de Afiliados</h4>
+                        <p data-i18n="card_4_desc">Amplie o alcance da sua plataforma com um sistema completo de afiliados, com gestão de parceiros, comissões automatizadas e acompanhamento em tempo real.</p>
+                    </div>
+                    <div class="affiliate-stats">
+                        <div class="stats-row">
+                            <div class="stat-box">
+                                <span class="lbl"><span class="dot-gray"></span> <span data-i18n="aff_1">AFILIADOS ATIVOS</span></span>
+                                <span class="val white"><span class="animate-counter" data-prefix="+" data-suffix="" data-target="128">0</span></span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="lbl"><span class="dot-gray"></span> <span data-i18n="aff_2">NOVOS CADASTROS</span></span>
+                                <span class="val pink"><span class="animate-counter" data-prefix="+" data-suffix="" data-target="32">0</span> <small class="lbl-small" data-i18n="aff_2_hoje">hoje</small></span>
+                            </div>
+                        </div>
+                        <div class="stat-box full-width">
+                            <span class="lbl" data-i18n="aff_3">$ COMISSÕES GERADAS</span>
+                            <span class="val pink">R$ <span class="animate-counter" data-prefix="" data-suffix="" data-target="18540">0</span></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: MAP & REGULAMENTADA -->
+    <section class="regulated-section" id="regulamentacao">
+        <div class="container two-col align-start">
+            <div class="col-left left-align">
+                <h2 class="title-large" style="margin-bottom: 24px;" data-i18n="reg_title">Tenha sua casa regulamentada</h2>
+                <p class="description" style="margin-bottom: 48px; max-width: 500px;" data-i18n="reg_desc">
+                    Uma plataforma preparada para atender às exigências do mercado regulado no Brasil, com estrutura tecnológica, personalização e suporte para sua operação.
+                </p>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="f-dot"></div>
+                        <p data-i18n="reg_1">Operação preparada para o mercado brasileiro</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="f-dot"></div>
+                        <p data-i18n="reg_2">Integração com pagamentos via PIX</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="f-dot"></div>
+                        <p data-i18n="reg_3">Plataforma personalizável para sua marca</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="f-dot"></div>
+                        <p data-i18n="reg_4">Estrutura pronta para escalar sua operação</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-right map-col">
+                <div class="map-container">
+                    <img src="imagens/Mapa 2.png" alt="Mapa do Brasil" class="brazil-map">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: FINAL CTA & BROWSER MOCKUP -->
+    <section class="final-cta-section">
+        <div class="container text-center">
+            <h2 class="title-large highlight-pink" style="margin-bottom: 24px; font-size: clamp(40px, 7vw, 64px);" data-i18n="final_title">Quero me tornar operador regulamentado</h2>
+            <p class="description" style="margin-bottom: 48px; color: #fff; font-weight: 500; font-size: 20px; max-width: 700px; margin-inline: auto;" data-i18n="final_desc">Clique no botão abaixo para agendar uma apresentação exclusiva com nossa Equipe e transforme seu projeto hoje mesmo.</p>
+            
+            <div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 80px; flex-wrap: wrap;">
+                <a href="#" class="btn-primary-nav" style="padding: 18px 32px; font-size: 16px; min-width: 250px; display: flex; align-items: center; justify-content: center;" data-i18n="final_btn">AGENDAR APRESENTAÇÃO</a>
+            </div>
+            
+            <div class="browser-mockup-wrapper">
+                <div class="browser-header-top">
+                    <div class="browser-dots">
+                        <span class="browser-dot red"></span>
+                        <span class="browser-dot yellow"></span>
+                        <span class="browser-dot green"></span>
+                    </div>
+                    <div class="browser-address"></div>
+                </div>
+                <img src="imagens/tela sistema.png" alt="Tela do Sistema" class="browser-content-img" onerror="this.src='imagens/Mockup telefone.png'">
+            </div>
+        </div>
+    </section>
+
+    <!-- GLOBAL LEAD MODAL -->
+    <div id="leadModal" class="lead-modal-overlay">
+        <div class="lead-modal">
+            <button class="lead-modal-close" id="closeLeadModal">&times;</button>
+            <h3 class="lead-modal-title" data-i18n="modal_title">Fale com um especialista</h3>
+            <p class="lead-modal-subtitle" data-i18n="modal_subtitle">Preencha os dados e continue no WhatsApp</p>
+            
+            <form id="leadForm">
+                <div class="form-group">
+                    <label for="leadName" data-i18n="modal_name">Nome</label>
+                    <input type="text" id="leadName" required placeholder="Seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="leadCompany" data-i18n="modal_company">Empresa</label>
+                    <input type="text" id="leadCompany" required placeholder="Sua empresa">
+                </div>
+                <div class="form-group">
+                    <label for="leadPhone" data-i18n="modal_phone">Telefone</label>
+                    <input type="tel" id="leadPhone" required placeholder="(00) 00000-0000">
+                </div>
+                <div class="form-group">
+                    <label for="leadMessage" data-i18n="modal_message">Mensagem (opcional)</label>
+                    <textarea id="leadMessage" rows="3" placeholder="Sua mensagem..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; border: none; font-size: 16px; padding: 16px; justify-content: center; margin-top: 10px;" data-i18n="modal_submit">Enviar p/ WhatsApp <i class="fa-brands fa-whatsapp"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-copy">
+                &copy; <span id="current-year">2026</span> INDEXSOFT. Todos os direitos reservados.
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/company/indexigamming/" target="_blank" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/indexsoft?igsh=cWtudHQ3NDN6ZHV4&utm_source=qr" target="_blank" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- COOKIE BANNER -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-container">
+            <p class="cookie-text">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span data-i18n="cookie_text">Utilizamos cookies para melhorar sua experiência, personalizar conteúdo e analisar o tráfego. Ao continuar, você concorda com nossa política.</span>
+            </p>
+            <div class="cookie-actions">
+                <a href="#" class="cookie-link" data-i18n="cookie_more">Saiba mais</a>
+                <button id="declineCookies" class="btn-cookie-secondary" data-i18n="cookie_decline">Recusar</button>
+                <button id="acceptCookies" class="btn-cookie-primary" data-i18n="cookie_accept">Aceitar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
